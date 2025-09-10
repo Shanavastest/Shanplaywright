@@ -1,0 +1,124 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\sbasheer\\Playwrightautomation\\playwright.config.js",
+    "rootDir": "C:/Users/sbasheer/Playwrightautomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\sbasheer\\Playwrightautomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\sbasheer\\Playwrightautomation\\UserssbasheerPlaywrightautomation\tests\testdata\testdata.csv'",
+      "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\sbasheer\\Playwrightautomation\\UserssbasheerPlaywrightautomation\tests\testdata\testdata.csv'\n    at Object.<anonymous> (C:\\Users\\sbasheer\\Playwrightautomation\\tests\\pages\\Loginpage.js:4:10)\n    at Object.<anonymous> (C:\\Users\\sbasheer\\Playwrightautomation\\tests\\Pomtest.spec.js:2:1)",
+      "location": {
+        "file": "C:\\Users\\sbasheer\\Playwrightautomation\\tests\\pages\\Loginpage.js",
+        "column": 10,
+        "line": 4
+      },
+      "snippet": "\u001b[90m   at \u001b[39mpages\\Loginpage.js:4\n\n\u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m fs \u001b[36mfrom\u001b[39m \u001b[32m\"fs\"\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mimport\u001b[39m { parse } \u001b[36mfrom\u001b[39m \u001b[32m\"csv-parse/sync\"\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m parse(fs\u001b[33m.\u001b[39mreadFileSync(\u001b[32m\"C:\\Users\\sbasheer\\Playwrightautomation\\tests\\testdata\\testdata.csv\"\u001b[39m)\u001b[33m,\u001b[39m{\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m     columns\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 7 |\u001b[39m     skip_empty_lines\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+    },
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2025-09-10T10:53:40.264Z",
+    "duration": 166.33300000000008,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

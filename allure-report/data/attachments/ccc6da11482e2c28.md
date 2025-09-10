@@ -1,0 +1,147 @@
+# Test info
+
+- Name: test
+- Location: C:\Users\sbasheer\Playwrightautomation\tests\submitquote.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Indigo Primary MPL' })
+    - waiting for" https://preprod.origamirisk.com/Origami/Proposals/NewApplication" navigation to finish...
+    - navigated to "https://preprod.origamirisk.com/Origami/Proposals/NewApplication"
+    - locator resolved to <a href="/Origami/Proposals/NewApplication?PolicySetID=16">Indigo Primary MPL</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at C:\Users\sbasheer\Playwrightautomation\tests\submitquote.spec.js:20:64
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#"
+- navigation:
+  - img "Custom Logo"
+  - list:
+    - listitem:
+      - link "Dashboards":
+        - /url: /Origami/Dashboards/My?dashboardType=H
+    - listitem:
+      - link "Tasks":
+        - /url: /Origami/Tasks/DefaultView
+    - listitem:
+      - link "New Submission":
+        - /url: /Origami/Proposals/NewApplication
+    - listitem:
+      - link "Emails":
+        - /url: /Origami/Emails/DefaultView
+    - listitem:
+      - link "Claims":
+        - /url: /Origami/Claims/DefaultView
+    - listitem:
+      - link "Policy Info":
+        - /url: /Origami/Policies/DefaultView
+    - listitem:
+      - link "Contacts":
+        - /url: /Origami/Contacts/DefaultView
+    - listitem:
+      - link "Reports":
+        - /url: /Origami/Reports/DefaultView
+    - listitem:
+      - link "Admin":
+        - /url: /Origami/Admin
+  - text: Default
+  - checkbox "Default New Look"
+  - text: New Look
+  - textbox "Global Search"
+  - text:  Rennel Nayan currently working in Indigo
+  - link "Help":
+    - /url: /Origami/Help/ResolveContent?path=Topics%2FHome.htm
+  - link "Sign Out":
+    - /url: /Origami/Account/Logout
+  - list:
+    - listitem:
+      - button "Site Options Dropdown Menu"
+- main:
+  - heading "Select Rating Program" [level=1]
+  - list:
+    - listitem:
+      - button "Cancel"
+  - heading "Active Rating Programs" [level=4]
+  - link "IA MPL":
+    - /url: /Origami/Proposals/NewApplication?PolicySetID=24
+  - link "Indigo Excess MPL":
+    - /url: /Origami/Proposals/NewApplication?PolicySetID=17
+  - link "Indigo Primary MPL":
+    - /url: /Origami/Proposals/NewApplication?PolicySetID=16
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('test', async ({ page }) => {
+   4 |   await page.goto('https://preprod.origamirisk.com/Origami/Account/Login?account=Mission_Pre_Prod');
+   5 |   await page.getByRole('textbox', { name: 'User Name' }).click();
+   6 |   await page.getByRole('textbox', { name: 'User Name' }).fill('rennel.nayan@rcggs.com');
+   7 |   await page.getByRole('textbox', { name: 'Password' }).click();
+   8 |   await page.getByRole('textbox', { name: 'Password' }).fill('@04TestTest2025');
+   9 |   await page.getByRole('button', { name: 'Login' }).click();
+  10 |   await page.waitForTimeout(5000);
+  11 |   // Home page
+  12 |   await page.getByText('In preparation for the').click();
+  13 |   //await page.getByText('This is TIGER, refreshed from').click();
+  14 |   await page.getByRole('textbox', { name: 'Name' }).click();
+  15 |   await page.getByRole('textbox', { name: 'Name' }).fill('indigo');
+  16 |   await page.getByRole('button', { name: 'Initiate Search' }).click();
+  17 |   await page.getByLabel('Clients Data Grid').getByRole('link', { name: 'Indigo' }).click();
+  18 |   await page.getByRole('link', { name: 'New Submission' }).click();
+  19 |  // await page.waitForTimeout(4000);
+> 20 |   await page.getByRole('link', { name: 'Indigo Primary MPL' }).click();
+     |                                                                ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  21 |   //information page
+  22 |   //await page.waitForSelector('#rbCustomCode14ID0');
+  23 |   await page.waitForTimeout(3000);
+  24 |   await page.locator('#rbCustomCode14ID0').click();
+  25 |  // await page.getByRole('listitem').filter({ hasText: 'Insured:' }).getByRole('button').click();
+  26 |  await page.waitForTimeout(2000);
+  27 |  await page.click("button[alt='MemberID']");
+  28 |  //await page.waitForTimeout(3000);
+  29 |  //Frames
+  30 |  const frame =await page.frame('dialogFrame');
+  31 |  await page.waitForTimeout(50000);
+  32 |  frame.fill("input[id='Name']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  33 |  //await page.waitForTimeout(50000);
+  34 |  //await page.getByText('Automation IndigoSmoke 19/05/2025 21:18:55').click();
+  35 |  //await page.click("input[id='Name']");
+  36 |  //await page.fill("input[id='Name']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  37 | //await page.fill("#",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  38 |  //frame.click("button[aria-label='Initiate Search']");
+  39 |
+  40 |
+  41 |  /* //await page.fill("input[alt='Member']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  42 |  await page.waitForTimeout(1000);
+  43 |  await page.getByText('Automation IndigoSmoke 19/05/2025 21:18:55').click();
+  44 |   //await page.waitForTimeout(5000);
+  45 |   await page.selectOption('//select[@name="Member.StateID"]', 'California');
+  46 |   await page.selectOption('//select[@name="StateID"]', 'California');
+  47 |   await page.getByLabel('Quoting Process Status').selectOption('69793');
+  48 |   await page.fill("input[id='AgentID']",'Baber, Sarah');
+  49 |   //await page.fill("input[name='__origamilookupdescription_AgentID']",'Collins, Philip');
+  50 |   await page.selectOption('//select[@name="CustomCode15ID"]','Individual');
+  51 |   await page.locator('#useraction_next').click();
+  52 |   //clearance
+  53 |   await page.getByLabel('Duplicate Proposal Override').selectOption('True');
+  54 |   await page.locator('#useraction_next').click();
+  55 |   //coverages
+  56 |   await page.fill("input[aria-label='Area of Practice']",'Accounting Service - Audit/Attest');
+  57 |   await page.fill("input[name='Coverage_E&O.CustomNumber3']",'2021');
+  58 |   //Loss of information*/
+  59 |   
+  60 |   
+  61 | })
+```

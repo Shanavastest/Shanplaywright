@@ -1,0 +1,826 @@
+# Test info
+
+- Name: test
+- Location: C:\Users\sbasheer\Playwrightautomation\tests\submitquote.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('#rbCustomCode14ID0')
+    - waiting for" https://preprod.origamirisk.com/Origami/Proposals/Interview?interviewID=17&policySetID=16" navigation to finish...
+    - navigated to "https://preprod.origamirisk.com/Origami/Proposals/Interview?interviewID=17&policySetID=16"
+    - locator resolved to <input type="radio" value="69517" aria-required="true" id="rbCustomCode14ID0" name="rbCustomCode14ID" previouslychecked="false" onclick="clearRadio($(this))" aria-label="New or Existing Insured" onkeydown="radioKeyDown($(this), event)"/>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+
+    at C:\Users\sbasheer\Playwrightautomation\tests\submitquote.spec.js:24:44
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#"
+- navigation:
+  - img "Custom Logo"
+  - list:
+    - listitem:
+      - link "Dashboards":
+        - /url: /Origami/Dashboards/My?dashboardType=H
+    - listitem:
+      - link "Tasks":
+        - /url: /Origami/Tasks/DefaultView
+    - listitem:
+      - link "New Submission":
+        - /url: /Origami/Proposals/NewApplication
+    - listitem:
+      - link "Emails":
+        - /url: /Origami/Emails/DefaultView
+    - listitem:
+      - link "Claims":
+        - /url: /Origami/Claims/DefaultView
+    - listitem:
+      - link "Policy Info":
+        - /url: /Origami/Policies/DefaultView
+    - listitem:
+      - link "Contacts":
+        - /url: /Origami/Contacts/DefaultView
+    - listitem:
+      - link "Reports":
+        - /url: /Origami/Reports/DefaultView
+    - listitem:
+      - link "Admin":
+        - /url: /Origami/Admin
+  - text: Default
+  - checkbox "Default New Look"
+  - text: New Look
+  - textbox "Global Search"
+  - text:  Rennel Nayan currently working in Indigo
+  - link "Help":
+    - /url: /Origami/Help/ResolveContent?path=Topics%2FHome.htm
+  - link "Sign Out":
+    - /url: /Origami/Account/Logout
+  - list:
+    - listitem:
+      - button "Site Options Dropdown Menu"
+- main:
+  - heading "Insured Information (Page 1 of 5)" [level=1]
+  - list:
+    - listitem:
+      - button "Continue >"
+    - listitem:
+      - button "Cancel"
+  - region "Application Information":
+    - heading "Application Information" [level=3]
+    - list:
+      - listitem:
+        - paragraph: Is this application for a new insured or an existing insured?
+      - listitem:
+        - radio "New or Existing Insured"
+        - text: Existing
+        - radio "New or Existing Insured"
+        - text: New
+  - region:
+    - heading "Select Existing Insured" [level=4]
+    - list:
+      - listitem:
+        - text: Insured *
+        - textbox "Insured"
+        - button "Click to lookup value"
+    - heading "New Applicant Information" [level=4]
+    - list:
+      - listitem:
+        - text: Name of Applicant *
+        - textbox "Name"
+    - list:
+      - listitem:
+        - text: DUNS number
+        - textbox "DUNS Number"
+      - listitem
+      - listitem:
+        - button "Get DnB Data By DUNS Number"
+    - heading "Principal Address" [level=4]
+    - list:
+      - listitem:
+        - text: Address line 1
+        - textbox "Street1"
+      - listitem:
+        - text: Member Street1
+        - textbox "Member Street1"
+      - listitem:
+        - text: Address line 2
+        - textbox "Street2"
+      - listitem:
+        - text: City
+        - textbox "City"
+      - listitem:
+        - text: State *
+        - combobox "State":
+          - option [selected]
+          - option "Alabama"
+          - option "Alaska"
+          - option "American Samoa"
+          - option "Arizona"
+          - option "Arkansas"
+          - option "Armed Forces Europe, Middle East, & Canada"
+          - option "Armed Forces Pacific"
+          - option "California"
+          - option "Canada - Alberta"
+          - option "Canada - British Columbia"
+          - option "Canada - Manitoba"
+          - option "Canada - New Brunswick"
+          - option "Canada - Newfoundland"
+          - option "Canada - Northwest Territories"
+          - option "Canada - Nova Scotia"
+          - option "Canada - Nunavut"
+          - option "Canada - Ontario"
+          - option "Canada - Prince Edward Island"
+          - option "Canada - Quebec"
+          - option "Canada - Saskatchewan"
+          - option "Canada - Yukon Territory"
+          - option "Colorado"
+          - option "Connecticut"
+          - option "Delaware"
+          - option "District of Columbia"
+          - option "Federal Jurisdiction"
+          - option "Federated States of Micronesia"
+          - option "Florida"
+          - option "Georgia"
+          - option "Guam"
+          - option "Hawaii"
+          - option "Idaho"
+          - option "Illinois"
+          - option "Indiana"
+          - option "Iowa"
+          - option "Kansas"
+          - option "Kentucky"
+          - option "Louisiana"
+          - option "Maine"
+          - option "Marshall Islands"
+          - option "Maryland"
+          - option "Massachusetts"
+          - option "Michigan"
+          - option "Minnesota"
+          - option "Mississippi"
+          - option "Missouri"
+          - option "Montana"
+          - option "Nebraska"
+          - option "Nevada"
+          - option "New Hampshire"
+          - option "New Jersey"
+          - option "New Mexico"
+          - option "New York"
+          - option "North Carolina"
+          - option "North Dakota"
+          - option "Northern Mariana Islands"
+          - option "Ohio"
+          - option "Oklahoma"
+          - option "Oregon"
+          - option "Palau"
+          - option "Pennsylvania"
+          - option "Puerto Rico"
+          - option "Rhode Island"
+          - option "South Carolina"
+          - option "South Dakota"
+          - option "Tennessee"
+          - option "Texas"
+          - option "Unknown or Unspecified"
+          - option "Utah"
+          - option "Vermont"
+          - option "Virgin Islands"
+          - option "Virginia"
+          - option "Washington"
+          - option "West Virginia"
+          - option "Wisconsin"
+          - option "Wyoming"
+      - listitem:
+        - text: Zip
+        - textbox "Postal"
+    - heading "Risk Address" [level=4]
+    - list:
+      - listitem:
+        - text: Location Address 1
+        - textbox "Risk Loc Address 1"
+      - listitem:
+        - text: Location Address 2
+        - textbox "Risk Loc Address 2"
+      - listitem:
+        - text: City
+        - textbox "Risk Loc City"
+      - listitem:
+        - text: Risk State *
+        - combobox "State":
+          - option [selected]
+          - option "Alabama"
+          - option "Alaska"
+          - option "American Samoa"
+          - option "Arizona"
+          - option "Arkansas"
+          - option "Armed Forces Europe, Middle East, & Canada"
+          - option "Armed Forces Pacific"
+          - option "California"
+          - option "Canada - Alberta"
+          - option "Canada - British Columbia"
+          - option "Canada - Manitoba"
+          - option "Canada - New Brunswick"
+          - option "Canada - Newfoundland"
+          - option "Canada - Northwest Territories"
+          - option "Canada - Nova Scotia"
+          - option "Canada - Nunavut"
+          - option "Canada - Ontario"
+          - option "Canada - Prince Edward Island"
+          - option "Canada - Quebec"
+          - option "Canada - Saskatchewan"
+          - option "Canada - Yukon Territory"
+          - option "Colorado"
+          - option "Connecticut"
+          - option "Delaware"
+          - option "District of Columbia"
+          - option "Federal Jurisdiction"
+          - option "Federated States of Micronesia"
+          - option "Florida"
+          - option "Georgia"
+          - option "Guam"
+          - option "Hawaii"
+          - option "Idaho"
+          - option "Illinois"
+          - option "Indiana"
+          - option "Iowa"
+          - option "Kansas"
+          - option "Kentucky"
+          - option "Louisiana"
+          - option "Maine"
+          - option "Marshall Islands"
+          - option "Maryland"
+          - option "Massachusetts"
+          - option "Michigan"
+          - option "Minnesota"
+          - option "Mississippi"
+          - option "Missouri"
+          - option "Montana"
+          - option "Nebraska"
+          - option "Nevada"
+          - option "New Hampshire"
+          - option "New Jersey"
+          - option "New Mexico"
+          - option "New York"
+          - option "North Carolina"
+          - option "North Dakota"
+          - option "Northern Mariana Islands"
+          - option "Ohio"
+          - option "Oklahoma"
+          - option "Oregon"
+          - option "Palau"
+          - option "Pennsylvania"
+          - option "Puerto Rico"
+          - option "Rhode Island"
+          - option "South Carolina"
+          - option "South Dakota"
+          - option "Tennessee"
+          - option "Texas"
+          - option "Unknown or Unspecified"
+          - option "Utah"
+          - option "Vermont"
+          - option "Virgin Islands"
+          - option "Virginia"
+          - option "Washington"
+          - option "West Virginia"
+          - option "Wisconsin"
+          - option "Wyoming"
+      - listitem:
+        - text: Zip Code
+        - textbox "Risk Loc Zip Code"
+    - list:
+      - listitem:
+        - button "Get DnB Data By Address"
+  - region:
+    - heading [level=3]
+    - heading "DUNS Data" [level=4]
+    - list:
+      - listitem:
+        - text: DUNS Name
+        - textbox "Primary Business Name" [disabled]
+      - listitem:
+        - text: "Last DnB Update:"
+        - textbox "DUNS Last Call Date" [disabled]
+      - listitem:
+        - text: Address Line 1
+        - textbox "Primary Address Street1" [disabled]
+      - listitem:
+        - text: Address Line 2
+        - textbox "Primary Address Street2" [disabled]
+      - listitem:
+        - text: City
+        - textbox "Primary Address Locality" [disabled]
+      - listitem:
+        - text: State
+        - combobox "Primary Address Region" [disabled]:
+          - option [selected]
+          - option "Alabama"
+          - option "Alabama"
+          - option "Alaska"
+          - option "Alaska"
+          - option "American Samoa"
+          - option "American Samoa"
+          - option "Arizona"
+          - option "Arizona"
+          - option "Arkansas"
+          - option "Arkansas"
+          - option "Armed Forces Europe, Middle East, & Canada"
+          - option "Armed Forces Europe, Middle East, & Canada"
+          - option "Armed Forces Pacific"
+          - option "Armed Forces Pacific"
+          - option "California"
+          - option "California"
+          - option "Canada - Alberta"
+          - option "Canada - Alberta"
+          - option "Canada - British Columbia"
+          - option "Canada - British Columbia"
+          - option "Canada - Manitoba"
+          - option "Canada - Manitoba"
+          - option "Canada - New Brunswick"
+          - option "Canada - New Brunswick"
+          - option "Canada - Newfoundland"
+          - option "Canada - Newfoundland"
+          - option "Canada - Northwest Territories"
+          - option "Canada - Northwest Territories"
+          - option "Canada - Nova Scotia"
+          - option "Canada - Nova Scotia"
+          - option "Canada - Nunavut"
+          - option "Canada - Nunavut"
+          - option "Canada - Ontario"
+          - option "Canada - Ontario"
+          - option "Canada - Prince Edward Island"
+          - option "Canada - Prince Edward Island"
+          - option "Canada - Quebec"
+          - option "Canada - Quebec"
+          - option "Canada - Saskatchewan"
+          - option "Canada - Saskatchewan"
+          - option "Canada - Yukon Territory"
+          - option "Canada - Yukon Territory"
+          - option "Colorado"
+          - option "Colorado"
+          - option "Connecticut"
+          - option "Connecticut"
+          - option "Delaware"
+          - option "Delaware"
+          - option "District of Columbia"
+          - option "District of Columbia"
+          - option "Federal Jurisdiction"
+          - option "Federal Jurisdiction"
+          - option "Federated States of Micronesia"
+          - option "Federated States of Micronesia"
+          - option "Florida"
+          - option "Florida"
+          - option "Georgia"
+          - option "Georgia"
+          - option "Guam"
+          - option "Guam"
+          - option "Hawaii"
+          - option "Hawaii"
+          - option "Idaho"
+          - option "Idaho"
+          - option "Illinois"
+          - option "Illinois"
+          - option "Indiana"
+          - option "Indiana"
+          - option "Iowa"
+          - option "Iowa"
+          - option "Kansas"
+          - option "Kansas"
+          - option "Kentucky"
+          - option "Kentucky"
+          - option "Louisiana"
+          - option "Louisiana"
+          - option "Maine"
+          - option "Maine"
+          - option "Marshall Islands"
+          - option "Marshall Islands"
+          - option "Maryland"
+          - option "Maryland"
+          - option "Massachusetts"
+          - option "Massachusetts"
+          - option "Michigan"
+          - option "Michigan"
+          - option "Minnesota"
+          - option "Minnesota"
+          - option "Mississippi"
+          - option "Mississippi"
+          - option "Missouri"
+          - option "Missouri"
+          - option "Montana"
+          - option "Montana"
+          - option "Nebraska"
+          - option "Nebraska"
+          - option "Nevada"
+          - option "Nevada"
+          - option "New Hampshire"
+          - option "New Hampshire"
+          - option "New Jersey"
+          - option "New Jersey"
+          - option "New Mexico"
+          - option "New Mexico"
+          - option "New York"
+          - option "New York"
+          - option "North Carolina"
+          - option "North Carolina"
+          - option "North Dakota"
+          - option "North Dakota"
+          - option "Northern Mariana Islands"
+          - option "Northern Mariana Islands"
+          - option "Ohio"
+          - option "Ohio"
+          - option "Oklahoma"
+          - option "Oklahoma"
+          - option "Oregon"
+          - option "Oregon"
+          - option "Palau"
+          - option "Palau"
+          - option "Pennsylvania"
+          - option "Pennsylvania"
+          - option "Puerto Rico"
+          - option "Puerto Rico"
+          - option "Rhode Island"
+          - option "Rhode Island"
+          - option "South Carolina"
+          - option "South Carolina"
+          - option "South Dakota"
+          - option "South Dakota"
+          - option "Tennessee"
+          - option "Tennessee"
+          - option "Texas"
+          - option "Texas"
+          - option "Unknown or Unspecified"
+          - option "Unknown or Unspecified"
+          - option "Utah"
+          - option "Utah"
+          - option "Vermont"
+          - option "Vermont"
+          - option "Virgin Islands"
+          - option "Virgin Islands"
+          - option "Virginia"
+          - option "Virginia"
+          - option "Washington"
+          - option "Washington"
+          - option "West Virginia"
+          - option "West Virginia"
+          - option "Wisconsin"
+          - option "Wisconsin"
+          - option "Wyoming"
+          - option "Wyoming"
+      - listitem:
+        - text: Postal Code
+        - textbox "Primary Address Postal Code" [disabled]
+      - listitem:
+        - text: Telephone Number
+        - textbox "Telephone Number" [disabled]
+        - button "Click to lookup value"
+      - listitem:
+        - text: Website URL
+        - textbox "Website URL" [disabled]
+      - listitem:
+        - text: Email Address
+        - textbox "Email Address" [disabled]
+      - listitem:
+        - text: Standard Rating Score Date
+        - textbox "Standard Rating Score Date" [disabled]
+      - listitem:
+        - text: DnB API Call Status
+        - textbox "DnB Status" [disabled]
+      - listitem:
+        - text: NAICS Code
+        - textbox "NAICS Code" [disabled]
+      - listitem:
+        - text: NAICS Description
+        - textbox "NAICS Description" [disabled]
+    - list:
+      - listitem:
+        - button "Copy DUNS Name and Address up  to Applicant fields"
+    - heading "DUNS Data" [level=4]
+    - list:
+      - listitem:
+        - text: Operating Status
+        - textbox "Operating Status" [disabled]
+      - listitem:
+        - text: Legal Events Open Bankruptcy Indicator
+        - combobox "Legal Events Open Bankruptcy Indicator" [disabled]:
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: Open Criminal Proceedings
+        - combobox "Open Criminal Proceedings" [disabled]:
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: Open Financial Embarrassment Indicator
+        - combobox "Open Financial Embarrassment Indicator" [disabled]:
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: Paydex Score
+        - textbox "Paydex Score" [disabled]
+      - listitem:
+        - text: Delinquency Score Class
+        - textbox "Delinquency Score Class" [disabled]
+      - listitem:
+        - text: Delinquency Score Class Description
+        - textbox "Delinquency Score Class Description" [disabled]
+      - listitem:
+        - text: Delinquency Score Percentile
+        - textbox "Delinquency Score Percentile" [disabled]
+      - listitem:
+        - text: Failure Score Class
+        - textbox "Failure Score Class" [disabled]
+      - listitem:
+        - text: Failure Score Class Description
+        - textbox "Failure Score Class Description" [disabled]
+      - listitem:
+        - text: Failure Score Percentile
+        - textbox "Failure Score Percentile" [disabled]
+  - region:
+    - list:
+      - listitem
+    - list:
+      - listitem
+  - region:
+    - heading "Mailing Address (if different than above)" [level=4]
+    - list:
+      - listitem:
+        - text: Address1
+        - textbox "Billing Address1"
+      - listitem:
+        - text: Address2
+        - textbox "Billing Address2"
+      - listitem:
+        - text: City
+        - textbox "Billing City"
+      - listitem:
+        - text: State
+        - combobox "Billing State":
+          - option [selected]
+          - option "Alabama"
+          - option "Alaska"
+          - option "American Samoa"
+          - option "Arizona"
+          - option "Arkansas"
+          - option "Armed Forces Europe, Middle East, & Canada"
+          - option "Armed Forces Pacific"
+          - option "California"
+          - option "Canada - Alberta"
+          - option "Canada - British Columbia"
+          - option "Canada - Manitoba"
+          - option "Canada - New Brunswick"
+          - option "Canada - Newfoundland"
+          - option "Canada - Northwest Territories"
+          - option "Canada - Nova Scotia"
+          - option "Canada - Nunavut"
+          - option "Canada - Ontario"
+          - option "Canada - Prince Edward Island"
+          - option "Canada - Quebec"
+          - option "Canada - Saskatchewan"
+          - option "Canada - Yukon Territory"
+          - option "Colorado"
+          - option "Connecticut"
+          - option "Delaware"
+          - option "District of Columbia"
+          - option "Federal Jurisdiction"
+          - option "Federated States of Micronesia"
+          - option "Florida"
+          - option "Georgia"
+          - option "Guam"
+          - option "Hawaii"
+          - option "Idaho"
+          - option "Illinois"
+          - option "Indiana"
+          - option "Iowa"
+          - option "Kansas"
+          - option "Kentucky"
+          - option "Louisiana"
+          - option "Maine"
+          - option "Marshall Islands"
+          - option "Maryland"
+          - option "Massachusetts"
+          - option "Michigan"
+          - option "Minnesota"
+          - option "Mississippi"
+          - option "Missouri"
+          - option "Montana"
+          - option "Nebraska"
+          - option "Nevada"
+          - option "New Hampshire"
+          - option "New Jersey"
+          - option "New Mexico"
+          - option "New York"
+          - option "North Carolina"
+          - option "North Dakota"
+          - option "Northern Mariana Islands"
+          - option "Ohio"
+          - option "Oklahoma"
+          - option "Oregon"
+          - option "Palau"
+          - option "Pennsylvania"
+          - option "Puerto Rico"
+          - option "Rhode Island"
+          - option "South Carolina"
+          - option "South Dakota"
+          - option "Tennessee"
+          - option "Texas"
+          - option "Unknown or Unspecified"
+          - option "Utah"
+          - option "Vermont"
+          - option "Virgin Islands"
+          - option "Virginia"
+          - option "Washington"
+          - option "West Virginia"
+          - option "Wisconsin"
+          - option "Wyoming"
+      - listitem:
+        - text: Zip
+        - textbox "Billing Postal"
+    - heading "Misc Applicant Info" [level=4]
+    - list:
+      - listitem:
+        - text: SIC Code
+        - textbox "SIC Code"
+        - button "Click to lookup value"
+      - listitem:
+        - text: NAIC Codes
+        - textbox "NAIC Codes"
+        - button "Click to lookup value"
+      - listitem:
+        - text: Website URL
+        - textbox "Website URL"
+  - region "Quote Info":
+    - heading "Quote Info" [level=3]
+    - list:
+      - listitem:
+        - text: Primary Policy Type *
+        - combobox "Primary Policy Type":
+          - option
+          - option "Primary IAB"
+          - option "Primary MPL" [selected]
+      - listitem:
+        - text: Quoting Process Status *
+        - combobox "Quoting Process Status":
+          - option [selected]
+          - option "Cleared"
+          - option "Declined"
+          - option "Indicated"
+          - option "Quoted"
+          - option "Rejected"
+          - option "Renewal in Progress"
+          - option "Working"
+      - listitem:
+        - text: Agency *
+        - textbox "Agency"
+        - button "Click to lookup value"
+      - listitem:
+        - text: Agent *
+        - textbox "Agent"
+        - button "Click to lookup value"
+    - heading "Underwriter Contact Information" [level=4]
+    - list:
+      - listitem:
+        - text: Underwriter User
+        - textbox "Underwriter User": Rennel Nayan
+        - button "Click to lookup value"
+  - region:
+    - heading "Click to expand and collapse section Applicant Info" [level=3]:
+      - link "Click to expand and collapse section":
+        - /url: javascript:void(0)
+        - img "Click to expand and collapse section"
+      - text: Applicant Info
+    - list:
+      - listitem:
+        - text: Date Established
+        - textbox "Date Established"
+      - listitem:
+        - text: Applicant is *
+        - combobox "Applicant is":
+          - option [selected]
+          - option "Corporation"
+          - option "Individual"
+          - option "Other"
+          - option "Partnership"
+      - listitem:
+        - text: "*"
+        - textbox "Other Applicant"
+      - listitem:
+        - text: Is the entity owned, controlled by, or affiliated?
+        - combobox "Is the entity owned, controlled by, or affiliated?":
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: "Explain:"
+        - textbox "Other Entity"
+      - listitem:
+        - text: Has the name of the Applicant been changed?
+        - combobox "Has the name of the Applicant been changed?":
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: "Explain:"
+        - textbox "Applicant Name after change"
+      - listitem:
+        - text: Has the Applicant been involved in any merger, acquisition or consolidation?
+        - combobox "merger, acquisition or consolidation":
+          - option [selected]
+          - option "Yes"
+          - option "No"
+      - listitem:
+        - text: Company Website
+        - textbox "Company Website"
+      - listitem:
+        - text: Is Company Website N/A
+        - checkbox "Is Company Website N/A"
+  - region:
+    - heading "General Policy Info" [level=4]
+    - list:
+      - listitem:
+        - text: Effective Date *
+        - textbox "Effective Date": 05/19/2025
+      - listitem:
+        - text: Expiration Date *
+        - textbox "Expiration Date"
+      - listitem:
+        - text: Full Prior Acts
+        - checkbox "Full Prior Acts" [checked]
+      - listitem:
+        - text: Retro Date
+        - textbox "Retro Date"
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('test', async ({ page }) => {
+   4 |   await page.goto('https://preprod.origamirisk.com/Origami/Account/Login?account=Mission_Pre_Prod');
+   5 |   await page.getByRole('textbox', { name: 'User Name' }).click();
+   6 |   await page.getByRole('textbox', { name: 'User Name' }).fill('rennel.nayan@rcggs.com');
+   7 |   await page.getByRole('textbox', { name: 'Password' }).click();
+   8 |   await page.getByRole('textbox', { name: 'Password' }).fill('@04TestTest2025');
+   9 |   await page.getByRole('button', { name: 'Login' }).click();
+  10 |   await page.waitForTimeout(5000);
+  11 |   // Home page
+  12 |   await page.getByText('In preparation for the').click();
+  13 |   //await page.getByText('This is TIGER, refreshed from').click();
+  14 |   await page.getByRole('textbox', { name: 'Name' }).click();
+  15 |   await page.getByRole('textbox', { name: 'Name' }).fill('indigo');
+  16 |   await page.getByRole('button', { name: 'Initiate Search' }).click();
+  17 |   await page.getByLabel('Clients Data Grid').getByRole('link', { name: 'Indigo' }).click();
+  18 |   await page.getByRole('link', { name: 'New Submission' }).click();
+  19 |  // await page.waitForTimeout(4000);
+  20 |   await page.getByRole('link', { name: 'Indigo Primary MPL' }).click();
+  21 |   //information page
+  22 |   //await page.waitForSelector('#rbCustomCode14ID0');
+  23 |   await page.waitForTimeout(1000);
+> 24 |   await page.locator('#rbCustomCode14ID0').click();
+     |                                            ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  25 |  // await page.getByRole('listitem').filter({ hasText: 'Insured:' }).getByRole('button').click();
+  26 |  await page.waitForTimeout(30000);
+  27 |  await page.click("button[alt='MemberID']");
+  28 |  //await page.waitForTimeout(3000);
+  29 |  //Frames
+  30 |  const frame =await page.frame('dialogFrame');
+  31 |  frame.fill("input[id='Name']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  32 |  await page.waitForTimeout(50000);
+  33 |  //await page.getByText('Automation IndigoSmoke 19/05/2025 21:18:55').click();
+  34 |  //await page.click("input[id='Name']");
+  35 |  //await page.fill("input[id='Name']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  36 | //await page.fill("#",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  37 |  frame.click("button[aria-label='Initiate Search']");
+  38 |
+  39 |
+  40 |  /* //await page.fill("input[alt='Member']",'Automation IndigoSmoke 19/05/2025 21:18:55');
+  41 |  await page.waitForTimeout(1000);
+  42 |  await page.getByText('Automation IndigoSmoke 19/05/2025 21:18:55').click();
+  43 |   //await page.waitForTimeout(5000);
+  44 |   await page.selectOption('//select[@name="Member.StateID"]', 'California');
+  45 |   await page.selectOption('//select[@name="StateID"]', 'California');
+  46 |   await page.getByLabel('Quoting Process Status').selectOption('69793');
+  47 |   await page.fill("input[id='AgentID']",'Baber, Sarah');
+  48 |   //await page.fill("input[name='__origamilookupdescription_AgentID']",'Collins, Philip');
+  49 |   await page.selectOption('//select[@name="CustomCode15ID"]','Individual');
+  50 |   await page.locator('#useraction_next').click();
+  51 |   //clearance
+  52 |   await page.getByLabel('Duplicate Proposal Override').selectOption('True');
+  53 |   await page.locator('#useraction_next').click();
+  54 |   //coverages
+  55 |   await page.fill("input[aria-label='Area of Practice']",'Accounting Service - Audit/Attest');
+  56 |   await page.fill("input[name='Coverage_E&O.CustomNumber3']",'2021');
+  57 |   //Loss of information*/
+  58 |   
+  59 |   
+  60 | })
+```
