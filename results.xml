@@ -1,2 +1,22 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.1663330000000001">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="11.811683">
+<testsuite name="example.spec.js" timestamp="2025-10-09T10:36:01.488Z" hostname="msedge" tests="2" failures="0" skipped="0" time="8.243" errors="0">
+<testcase name="has title" classname="example.spec.js" time="3.61">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-msedge\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\example-has-title-msedge\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="4.633">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-get-started-link-msedge\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\example-get-started-link-msedge\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
 </testsuites>

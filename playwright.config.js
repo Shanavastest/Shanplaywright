@@ -43,7 +43,7 @@ reporter: [['list'],
 
   /* Configure projects for major browsers */
   projects: [
-    {
+    /*{
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
@@ -56,6 +56,11 @@ reporter: [['list'],
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },*/
+
+    {
+      name: 'msedge' ,
+      use:{ ...devices['Desktop Edge']},
     },
 
     /* Test against mobile viewports. */

@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 2
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -50,37 +52,11 @@
         "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/sbasheer/Playwrightautomation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "webkit",
-        "name": "webkit",
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "msedge",
+        "name": "msedge",
         "testDir": "C:/Users/sbasheer/Playwrightautomation/tests",
         "testIgnore": [],
         "testMatch": [
@@ -96,27 +72,111 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\sbasheer\\Playwrightautomation\\UserssbasheerPlaywrightautomation\tests\testdata\testdata.csv'",
-      "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\sbasheer\\Playwrightautomation\\UserssbasheerPlaywrightautomation\tests\testdata\testdata.csv'\n    at Object.<anonymous> (C:\\Users\\sbasheer\\Playwrightautomation\\tests\\pages\\Loginpage.js:4:10)\n    at Object.<anonymous> (C:\\Users\\sbasheer\\Playwrightautomation\\tests\\Pomtest.spec.js:2:1)",
-      "location": {
-        "file": "C:\\Users\\sbasheer\\Playwrightautomation\\tests\\pages\\Loginpage.js",
-        "column": 10,
-        "line": 4
-      },
-      "snippet": "\u001b[90m   at \u001b[39mpages\\Loginpage.js:4\n\n\u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m fs \u001b[36mfrom\u001b[39m \u001b[32m\"fs\"\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[36mimport\u001b[39m { parse } \u001b[36mfrom\u001b[39m \u001b[32m\"csv-parse/sync\"\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m parse(fs\u001b[33m.\u001b[39mreadFileSync(\u001b[32m\"C:\\Users\\sbasheer\\Playwrightautomation\\tests\\testdata\\testdata.csv\"\u001b[39m)\u001b[33m,\u001b[39m{\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m     columns\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 7 |\u001b[39m     skip_empty_lines\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
-    },
-    {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "example.spec.js",
+      "file": "example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "msedge",
+              "projectName": "msedge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3610,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-09T10:36:04.167Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sbasheer\\Playwrightautomation\\test-results\\example-has-title-msedge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sbasheer\\Playwrightautomation\\test-results\\example-has-title-msedge\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-5a1ffbfe621fcf4fcaa1",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "msedge",
+              "projectName": "msedge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-09T10:36:04.209Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sbasheer\\Playwrightautomation\\test-results\\example-get-started-link-msedge\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sbasheer\\Playwrightautomation\\test-results\\example-get-started-link-msedge\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-6d2ea157cafeea287d7d",
+          "file": "example.spec.js",
+          "line": 11,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-09-10T10:53:40.264Z",
-    "duration": 166.33300000000008,
-    "expected": 0,
+    "startTime": "2025-10-09T10:36:01.448Z",
+    "duration": 11811.683,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

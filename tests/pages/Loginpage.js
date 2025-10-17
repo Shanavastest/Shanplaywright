@@ -3,14 +3,6 @@ import fs from "fs"
 import path from "path";
 import { parse } from "csv-parse/sync";
 import { test } from "allure-playwright";
-
-//store csv data in a variable
-const records = parse(fs.readFileSync("C:\Users\sbasheer\Playwrightautomation\tests\testdata\testdata.csv"),{
-
-    columns:true,
-    skip_empty_lines:true,
-
-})
 exports.Loginpage =
 class Loginpage {
 
