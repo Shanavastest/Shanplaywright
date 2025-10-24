@@ -23,7 +23,7 @@ test('test', async ({ page }) => {
     const cart =new Cartpage(page)
     await page.waitForTimeout(3000)
     const status = await cart.checkProductInCart('Nexus');
-    //expect(await status).toBe(true);
+    expect(await status).toBe(true);
 
 
 });
