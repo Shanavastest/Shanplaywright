@@ -26,6 +26,7 @@ export default defineConfig({
 // reporter: 'html',
 reporter: [['list'],
            ['html'],
+           ['github'],
            ['junit', {outputFile:'results.xml'}],
            ['json', {outputFile: 'results.json'}],
            ['allure-playwright', {outputFolder: 'my-allure-results'}]
