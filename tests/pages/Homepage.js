@@ -28,6 +28,7 @@ await this.page.locator(this.addToCartbtn).click();
 
  async gotoCart () {
     await this.page.locator(this.cart).click();
+    console.log('Test completed');
 
 }
 
