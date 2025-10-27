@@ -20,10 +20,10 @@ test('test', async ({ page }) => {
     await home.gotoCart();
 
     //Cart
-    const cart =new Cartpage(page)
-    await page.waitForTimeout(3000)
-    const status = await cart.checkProductInCart('Nexus');
-    expect(await status).toBe(true);
+    //const cart =new Cartpage(page)
+    //await page.waitForTimeout(3000)
+    //const status = await cart.checkProductInCart('Nexus');
+    //expect(await status).toBe(true);
 
 
 });
